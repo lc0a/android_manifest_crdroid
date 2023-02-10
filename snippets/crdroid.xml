@@ -51,10 +51,10 @@
   <project path="frameworks/opt/telephony" name="crdroidandroid/android_frameworks_opt_telephony" remote="crdroid" />
 
   <project path="hardware/interfaces" name="crdroidandroid/android_hardware_interfaces" remote="crdroid" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="crdroidandroid/android_hardware_qcom_audio" revision="12.1-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" revision="12.1-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="crdroidandroid/android_hardware_qcom_media" revision="12.1-caf-sm8150" />
-  <project path="hardware/qcom-caf/wlan" name="crdroidandroid/android_hardware_qcom_wlan" revision="12.1-caf" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="crdroidandroid/android_hardware_qcom_audio" remote="crdroid" revision="12.1-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" remote="crdroid" revision="12.1-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="crdroidandroid/android_hardware_qcom_media" remote="crdroid" revision="12.1-caf-sm8150" />
+  <project path="hardware/qcom-caf/wlan" name="crdroidandroid/android_hardware_qcom_wlan" remote="crdroid" revision="12.1-caf" />
 
   <project path="libcore" name="crdroidandroid/android_libcore" remote="crdroid" />
 
