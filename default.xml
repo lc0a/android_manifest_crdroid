@@ -2,26 +2,34 @@
 <manifest>
 
   <remote name="github"
-           fetch="https://github.com/"
+           fetch="ssh://git@github.com/"
            sync-c="true"
            sync-j="4"
+           revision="refs/heads/lineage-19.1" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
+  <remote  name="lineage"
+           fetch="https://mirrors.tuna.tsinghua.edu.cn/git/lineageOS/"
+           review="review.lineageos.org"
            revision="refs/heads/lineage-19.1" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com"
+           fetch="https://mirrors.bfsu.edu.cn/git/AOSP"
            review="android-review.googlesource.com"
            revision="refs/tags/android-12.1.0_r22" />
 
   <default revision="refs/heads/lineage-19.1"
-           remote="github"
+           remote="lineage"
            sync-c="true"
            sync-j="4" />
 
   <remote  name="crdroid"
-           fetch="https://github.com/"
+           fetch="ssh://git@github.com/"
            sync-c="true"
            sync-j="4"
            revision="refs/heads/12.1" />
@@ -1064,7 +1072,8 @@
 
   <include name="snippets/crdroid.xml" />
   <include name="snippets/lineage.xml" />
-  <include name="snippets/pixel.xml" />
+  <!-- <include name="snippets/pixel.xml" /> -->
+  <include name="snippets/custom.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>
